@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C2BF3A6C2A819B9200C0510D /* Data structure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Data structure"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2BF3A6C2A819B9200C0510D /* Linear data structure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Linear data structure"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2BF3A6F2A819B9200C0510D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,7 +41,7 @@
 		C2BF3A632A819B9200C0510D = {
 			isa = PBXGroup;
 			children = (
-				C2BF3A6E2A819B9200C0510D /* Data structure */,
+				C2BF3A6E2A819B9200C0510D /* Linear data structure */,
 				C2BF3A6D2A819B9200C0510D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +49,25 @@
 		C2BF3A6D2A819B9200C0510D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C2BF3A6C2A819B9200C0510D /* Data structure */,
+				C2BF3A6C2A819B9200C0510D /* Linear data structure */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C2BF3A6E2A819B9200C0510D /* Data structure */ = {
+		C2BF3A6E2A819B9200C0510D /* Linear data structure */ = {
 			isa = PBXGroup;
 			children = (
 				C2BF3A6F2A819B9200C0510D /* main.swift */,
 			);
-			path = "Data structure";
+			path = "Linear data structure";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C2BF3A6B2A819B9200C0510D /* Data structure */ = {
+		C2BF3A6B2A819B9200C0510D /* Linear data structure */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C2BF3A732A819B9200C0510D /* Build configuration list for PBXNativeTarget "Data structure" */;
+			buildConfigurationList = C2BF3A732A819B9200C0510D /* Build configuration list for PBXNativeTarget "Linear data structure" */;
 			buildPhases = (
 				C2BF3A682A819B9200C0510D /* Sources */,
 				C2BF3A692A819B9200C0510D /* Frameworks */,
@@ -77,9 +77,9 @@
 			);
 			dependencies = (
 			);
-			name = "Data structure";
+			name = "Linear data structure";
 			productName = "Data structure";
-			productReference = C2BF3A6C2A819B9200C0510D /* Data structure */;
+			productReference = C2BF3A6C2A819B9200C0510D /* Linear data structure */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +97,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C2BF3A672A819B9200C0510D /* Build configuration list for PBXProject "Data structure" */;
+			buildConfigurationList = C2BF3A672A819B9200C0510D /* Build configuration list for PBXProject "Linear data structure" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,7 +110,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C2BF3A6B2A819B9200C0510D /* Data structure */,
+				C2BF3A6B2A819B9200C0510D /* Linear data structure */,
 			);
 		};
 /* End PBXProject section */
@@ -263,7 +263,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C2BF3A672A819B9200C0510D /* Build configuration list for PBXProject "Data structure" */ = {
+		C2BF3A672A819B9200C0510D /* Build configuration list for PBXProject "Linear data structure" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C2BF3A712A819B9200C0510D /* Debug */,
@@ -272,7 +272,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C2BF3A732A819B9200C0510D /* Build configuration list for PBXNativeTarget "Data structure" */ = {
+		C2BF3A732A819B9200C0510D /* Build configuration list for PBXNativeTarget "Linear data structure" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C2BF3A742A819B9200C0510D /* Debug */,
