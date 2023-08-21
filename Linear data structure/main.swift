@@ -4,7 +4,7 @@ import Foundation
 var statusMenu = true
 
 while (statusMenu == true) {
-    print("\nESTRUCTURA DE DATOS NO LINEALES.\n")
+    print("\nESTRUCTURA DE DATOS LINEALES.\n")
     print("Digite para ver el código de: \n1. Realizar un CRUD en un vector. \n2. Agregar y mostrar datos en una lista. \n3. Realizar el CRUD en una lista doblemente enlazada. \n4. Estructura de una tupla. \n5. Realizar un CRUD en un set. \n6. Ejemplo de un offset. \n\nDigite 7 para salir del programa.")
     if let menu = Int(readLine()!) {
         switch menu {
