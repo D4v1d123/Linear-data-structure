@@ -5,7 +5,7 @@ var statusMenu = true
 
 while (statusMenu == true) {
     print("\nESTRUCTURA DE DATOS LINEALES.\n")
-    print("Digite para ver el código de: \n1. Realizar un CRUD en un vector. \n2. Agregar y mostrar datos en una lista. \n3. Realizar el CRUD en una lista doblemente enlazada. \n4. Estructura de una tupla. \n5. Realizar un CRUD en un set. \n6. Ejemplo de un offset. \n7. Realizar operaciones dentro de una pila o stack. \n\nDigite 8 para salir del programa.")
+    print("Digite para ver el código de: \n1. Realizar un CRUD en un vector. \n2. Agregar y mostrar datos en una lista. \n3. Realizar el CRUD en una lista doblemente enlazada. \n4. Estructura de una tupla. \n5. Realizar un CRUD en un set. \n6. Ejemplo de un offset. \n7. Realizar operaciones dentro de una pila o stack. \n8. Realizar operaciones dentro de una cola o queue. \n\nDigite 9 para salir del programa.")
     if let menu = Int(readLine()!) {
         switch menu {
             case 1:
@@ -524,6 +524,109 @@ while (statusMenu == true) {
                 break
             
             case 8:
+                //Queues
+                /* Example
+                class Queues {
+                    var queue: [Any] = []
+                    
+                    //Insert data to end of the queue
+                    func enqueue (item: Any) {
+                        queue.append(item)
+                    }
+                    
+                    //Make a pop to start of the queue
+                    func dequeue () -> Any? {
+                        if queueIsEmpty() == true {
+                            return nil
+                        }
+                        let item = queue[0]
+                        queue.remove(at: 0)
+                        
+                        return item
+                    }
+                    
+                    //Show first item
+                    func peek () {
+                        if queueIsEmpty() == false {
+                            print("\nEl primer elemento de la cola es: \(queue[0]).")
+                        }
+                    }
+                    
+                    //Show all items of the queue
+                    func printQueue () {
+                        if queueIsEmpty() == false {
+                            print("\nLos elementos de la cola son:")
+                            for item in queue {
+                                print("🔘 \(item)")
+                            }
+                        }
+                    }
+                    
+                    //Check if the queue is empty or not
+                    func queueIsEmpty () -> Bool {
+                        if queue.isEmpty {
+                            print("\nLa pila esta vacía.")
+                            return true
+                        }
+                        return false
+                    }
+                }
+
+                //Test
+                var queue = Queues()
+
+                queue.enqueue(item: 1)
+                queue.enqueue(item: 2)
+
+                queue.printQueue()
+
+                queue.peek()
+
+                print(queue.dequeue())
+
+                queue.printQueue()
+                */
+
+                var status = true
+                
+                while status == true {
+                    print("\nREALIZAR OPERACIONES DENTRO DE UNA COLA O QUEUE. \n")
+                    print("Digite para ver el código de: \n1. Insertar valores. \n2. Extraer y eliminar el primer valor. \n3. Mostrar el primer valor guardado. \n4. Mostrar todos los valores de la cola o queue.")
+                    if let menu = Int(readLine()!) {
+                        switch menu {
+                        case 1:
+                            print("\nINSERTAR VALORES EN UNA COLA O QUEUE. \n")
+                            print("1    class Queues { \n2        var queue: [Any] = [] \n3    \n4        //Insertar datos al final de la cola o queue. \n5        func enqueue (item: Any) { \n6            queue.append(item) \n7        } \n8    } \n9    \n10   //Crear la cola o queue. \n11   var queue = Queues() \n12   \n13   //Agregar un elemento a la cola. \n14   queue.enqueue(item: 1)")
+                            status = false
+                            break
+                            
+                        case 2:
+                            print("\nEXTRAER Y ELIMINAR EL PRIMER VALOR EN UNA COLA O QUEUE. \n")
+                            print("1    class Queues { \n2        var queue: [Any] = [] \n3    \n4        //Insertar datos al final de la cola o queue. \n5        func enqueue (item: Any) { \n6            queue.append(item) \n7        } \n9    \n10       //Extraer y eliminar el último elemento de una cola o queue. \n11       func dequeue () -> Any? { \n12           if queueIsEmpty() == true { \n13               return nil \n14           } \n15           let item = queue[0] \n16           queue.remove(at: 0) \n17   \n18           return item \n19       } \n20   \n21       //Verificar si la cola o queue es vacía o no.\n22       func queueIsEmpty () -> Bool { \n23           if queue.isEmpty { \n24               print(\"La pila esta vacía.\") \n25               return true \n26           } \n27           return false \n28       } \n29   } \n30    \n31   //Crear la cola o queue. \n32   var queue = Queues() \n12   \n33   //Agregar un elemento a la cola. \n34   queue.enqueue(item: 1) \n36   \n35   //Extraer el último valor de la cola o queue. \n36   let number = queue.dequeue()")
+                            status = false
+                            break
+                            
+                        case 3:
+                            print("\nMOSTRAR EL PRIMER VALOR GUARDADO EN UNA COLA O QUEUE. \n")
+                            print("1    class Queues { \n2        var queue: [Any] = [] \n3    \n4        //Insertar datos al final de la cola o queue. \n5        func enqueue (item: Any) { \n6            queue.append(item) \n7        } \n9    \n10       //Mostrar el primer elemento. \n11       func peek () { \n12           if queueIsEmpty() == false { \n13               print(\"El primer elemento de la cola es: \\(queue[0]).\") \n14           } \n15       } \n16   \n17       //Verificar si la cola o queue es vacía o no.\n18       func queueIsEmpty () -> Bool { \n19           if queue.isEmpty { \n20               print(\"La pila esta vacía.\") \n21               return true \n22           } \n23           return false \n24       } \n25   } \n26    \n27   //Crear la cola o queue. \n28   var queue = Queues() \n29   \n30   //Agregar un elemento a la cola. \n31   queue.enqueue(item: 1) \n32   \n33   //Mostrar el último elemento de la cola o queue. \n34   queue.peek()")
+                            status = false
+                            break
+                            
+                        case 4:
+                            print("\nMOSTRAR TODOS LOS VALORES DE LA UNA COLA O QUEUE. \n")
+                            print("1    class Queues { \n2        var queue: [Any] = [] \n3    \n4        //Insertar datos al final de la cola o queue. \n5        func enqueue (item: Any) { \n6            queue.append(item) \n7        } \n9    \n10       //Mostrar todos lo elementos. \n11       func printQueue () { \n12           if queueIsEmpty() == false { \n13               print(\"Los elementos de la cola son:\") \n14               for item in queue { \n15                   print(\"🔘 \\(item)\") \n16               } \n17           } \n18       } \n19   \n20       //Verificar si la cola o queue es vacía o no.\n21       func queueIsEmpty () -> Bool { \n22           if queue.isEmpty { \n23               print(\"La pila esta vacía.\") \n24               return true \n25           } \n26           return false \n27       } \n28   } \n29    \n30   //Crear la cola o queue. \n28   var queue = Queues() \n31   \n32   //Agregar un elemento a la cola. \n33   queue.enqueue(item: 1) \n34   \n35   //Mostrar todos los elementos en la cola o queue. \n36   queue.printQueue()")
+                            break
+                            
+                        default:
+                            print("\n‼️La opción no se encuentra en el menu dado.‼️\n")
+                        }
+                    } else {
+                        print("\n‼️Solo se pueden digitar números.‼️\n")
+                    }
+                }
+                break
+            
+            case 9:
                 print("\nAdios 👋.")
                 statusMenu = false
             break
