@@ -5,7 +5,7 @@ var statusMenu = true
 
 while (statusMenu == true) {
     print("\nESTRUCTURA DE DATOS LINEALES.\n")
-    print("Digite para ver el código de: \n1. Realizar un CRUD en un vector. \n2. Agregar y mostrar datos en una lista. \n3. Realizar el CRUD en una lista doblemente enlazada. \n4. Estructura de una tupla. \n5. Realizar un CRUD en un set. \n6. Ejemplo de un offset. \n\nDigite 7 para salir del programa.")
+    print("Digite para ver el código de: \n1. Realizar un CRUD en un vector. \n2. Agregar y mostrar datos en una lista. \n3. Realizar el CRUD en una lista doblemente enlazada. \n4. Estructura de una tupla. \n5. Realizar un CRUD en un set. \n6. Ejemplo de un offset. \n7. Realizar operaciones dentro de una pila o stack. \n\nDigite 8 para salir del programa.")
     if let menu = Int(readLine()!) {
         switch menu {
             case 1:
@@ -406,6 +406,124 @@ while (statusMenu == true) {
             break
             
             case 7:
+                //Stacks URL: https://www.youtube.com/watch?v=FTGK47ndKJM
+                /* Example
+                class Stack {
+                    var stack: [Any] = []
+                    
+                    //Add items to stack
+                    func push (item: Any) {
+                        stack.append(item)
+                        
+                    }
+                    
+                    //Extract the last item of the stack
+                    func pop () -> Any? {
+                        let itemDeleted: Any
+                        
+                        //Verify that the stack is not empty
+                        if lastIndex() == nil {
+                            return nil
+                        }
+                        
+                        itemDeleted = stack[lastIndex()!]
+                        //Delete the last item
+                        stack.remove(at: lastIndex()!)
+                            
+                        return itemDeleted
+                    }
+                    
+                    //Get the last index of the stack
+                    func lastIndex () -> Int? {
+                        if stack.isEmpty {
+                            return nil
+                        } else {
+                            return stack.count - 1
+                        }
+                    }
+                    
+                    //Show the last item of the stack
+                    func peek () {
+                        if lastIndex() == nil {
+                            print("\nLa pila esta vacía.")
+                            return
+                        }
+                        print("\nEl último elemento de la lista es: \(stack[0]).")
+                    }
+                    
+                    //Show all items in the stack
+                    func printStack () {
+                        if lastIndex() == nil {
+                            print("\nLa pila esta vacía.")
+                            return
+                        }
+                        print("\nLos elementos de la lista son:")
+                        for item in stack {
+                            print("🔘 \(item)")
+                        }
+                    }
+                }
+
+                var stack = Stack()
+
+                //Test
+                stack.printStack()
+
+                stack.push(item: 1)
+                stack.push(item: 2)
+                stack.push(item: 3)
+
+                stack.printStack()
+
+                stack.pop()
+                stack.pop()
+
+                stack.printStack()
+
+                stack.peek()
+                */
+                
+                var status = true
+                
+                while status == true {
+                    print("\nHACER OPERACIONES DENTRO DE UNA PILA O STACK. \n")
+                    print("Digite para ver el código de: \n1. Insertar valores. \n2. Extraer y eliminar el último valor. \n3. Mostrar el último valor guardado. \n4. Mostrar todos los valores de la pila o stack.")
+                    if let menu = Int(readLine()!) {
+                        switch menu {
+                            case 1:
+                                print("\nINSERTAR VALORES A UNA PILA O STACK. \n")
+                                print("1    class Stack { \n2        var stack: [Any] = [] \n3    \n4        //Agregar un elemento a la pila o stack. \n5        func push (item: Any) { \n6            stack.append(item) \n7        } \n8    } \n9    \n10   //Crear la pila o stack. \n11   var stack = Stack() \n12   \n13   //Agregar un elemento en la última posición de la pila o stack. \n14   stack.push(item: 1)")
+                                status = false
+                            
+                                break
+                            case 2:
+                                print("\nEXTRAER Y ELIMINAR EL ÚLTIMO VALOR DE LA PILA O STACK. \n")
+                                print("1    class Stack { \n2        var stack: [Any] = [] \n3    \n4        //Agregar un elemento a la pila o stack. \n5        func push (item: Any) { \n6            stack.append(item) \n7        } \n9    \n10       //Extraer el último elementos de la pila o stack. \n11       func pop () -> Any? { \n12           let itemDeleted: Any \n13   \n14           //Verificar que la pila o stack no está vacía. \n15           if lastIndex() == nil { \n16               return nil \n17           } \n18   \n19           itemDeleted = stack[lastIndex()!] \n20           //Eliminar el último elemento. \n21           stack.remove(at: lastIndex()!) \n22   \n23           return itemDeleted \n24       } \n25   \n26       //Obtener el último índice de la pila o stack. \n27       func lastIndex () -> Int? { \n28           if stack.isEmpty { \n29               return nil \n30           } else { \n31               return stack.count - 1 \n32           } \n33       } \n34   } \n35    \n36   //Crear la pila o stack. \n37   var stack = Stack() \n38   \n39   //Agregar un elemento en la última posición de la pila o stack. \n40   stack.push(item: 1) \n41   \n42   //Extraer el último valor de la pila o stack. \n43   let number = stack.pop()")
+                                status = false
+                                break
+                                
+                            case 3:
+                                print("\nMOSTRAR EL ÚLTIMO VALOR GUARDADO DE LA PILA O STACK. \n")
+                                print("1    class Stack { \n2        var stack: [Any] = [] \n3    \n4        //Agregar un elemento a la pila o stack. \n5        func push (item: Any) { \n6            stack.append(item) \n7        } \n8   \n9        //Mostrar el último elemento de la pila o stack. \n10       func peek () { \n11           if lastIndex() == nil { \n12               print(\"La pila esta vacía.\") \n13               return \n14           } \n15           print(\"El último elemento de la lista es: \\(stack[lastIndex()!]).\") \n16       } \n17   \n18       //Obtener el último índice de la pila o stack. \n19       func lastIndex () -> Int? { \n20           if stack.isEmpty { \n21               return nil \n22           } else { \n23               return stack.count - 1 \n24           } \n25       } \n26   } \n27    \n28   //Crear la pila o stack. \n29   var stack = Stack() \n30   \n31   //Agregar elementos en la última posición de la pila o stack. \n32   stack.push(item: 1) \n33   stack.push(item: 2) \n34   stack.push(item: 3) \n35   \n36   //Mostrar el último valor de la pila o stack. \n37   stack.peek()")
+                                status = false
+                                break
+                                
+                            case 4:
+                                print("\nMOSTRAR TODOS LOS VALORES DE LA PILA O STACK. \n")
+                                print("1    class Stack { \n2        var stack: [Any] = [] \n3    \n4        //Agregar un elemento a la pila o stack. \n5        func push (item: Any) { \n6            stack.append(item) \n7        } \n8   \n9        //Mostrar todos los elementos. \n10       func printStack () { \n11           if lastIndex() == nil { \n12               print(\"La pila esta vacía.\") \n13               return \n14           } \n15           print(\"Los elementos de la lista son:\") \n16           for item in stack { \n17               print(\"🔘 \\(item)\") \n18           } \n19       } \n20   \n21       //Obtener el último índice de la pila o stack. \n22       func lastIndex () -> Int? { \n23           if stack.isEmpty { \n24               return nil \n25           } else { \n26               return stack.count - 1 \n27           } \n28       } \n29   } \n30    \n31   //Crear la pila o stack. \n32   var stack = Stack() \n33   \n34   //Agregar un elemento en la última posición de la pila o stack. \n35   stack.push(item: 1) \n36   \n37   //Mostrar todos los elementos en la pila o stack. \n38   stack.printStack()")
+                                status = false
+                                break
+                                
+                            default:
+                                print("\n‼️La opción no se encuentra en el menu dado.‼️\n")
+                        }
+                    } else {
+                        print("\n‼️Solo se pueden digitar números.‼️\n")
+                    }
+                }
+                break
+            
+            case 8:
                 print("\nAdios 👋.")
                 statusMenu = false
             break
